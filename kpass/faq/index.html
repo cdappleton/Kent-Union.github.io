@@ -182,18 +182,54 @@
       
       
 
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Activities
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Activities
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../activities/creating-product/" title="Creating a Membership Product" class="md-nav__link">
+      Creating a Membership Product
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
   
 
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
-    <label class="md-nav__link" for="nav-2">
+    <label class="md-nav__link" for="nav-3">
       KPass
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
+      <label class="md-nav__title" for="nav-3">
         KPass
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -327,8 +363,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#a-student-has-had-money-taken-but-no-confirmation-email" class="md-nav__link">
-    A student has had money taken but no confirmation email
+  <a href="#a-students-payment-has-gone-through-twice" class="md-nav__link">
+    A student's payment has gone through twice
   </a>
   
 </li>
@@ -356,13 +392,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
-    <label class="md-nav__link" for="nav-3">
+    <label class="md-nav__link" for="nav-4">
       News
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
+      <label class="md-nav__title" for="nav-4">
         News
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -441,8 +477,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#a-student-has-had-money-taken-but-no-confirmation-email" class="md-nav__link">
-    A student has had money taken but no confirmation email
+  <a href="#a-students-payment-has-gone-through-twice" class="md-nav__link">
+    A student's payment has gone through twice
   </a>
   
 </li>
@@ -475,19 +511,74 @@
 <li>Check the address within the <strong>Recipient Email Address</strong> field for typos or amend to a different email address (e.g. a university email instead of their personal one)</li>
 <li>Click <strong>Submit</strong></li>
 </ol>
-<hr />
-<pre><code>Hello NAME,
+<pre><code>Hello,
 
 I have resent your confirmation email to EMAIL, please check your spam/junk folder in case it was accidentally filtered there.
 
 Many thanks,
 </code></pre>
 
+<hr />
+<p>Another reason a confirmation email wouldn't have sent is because the payment didn't actually process completely.</p>
+<p>In these circumstances a student might check their bank account, see money has been taken and assume everything has gone through correctly. In actual fact, though money has been taken from their bank account it hasn't actually been processed through to us due to an error. Instead it's held by their bank and refunded back into their account soon afterwards.</p>
+<p>To see if a transaction didn't process completely:</p>
+<ol>
+<li>Go to the specific transaction page on SUMS (e.g. /finance/transactions/view/{transaction_ID})</li>
+<li>In the top right you'll see either a green <strong>Complete</strong> tag, an orange <strong>Processing</strong> tab or a red <strong>Cancelled</strong> tag</li>
+</ol>
+<p>This typically happens with international banks or a student inputting the incorrect billing address attached to their bank card. Inform them their money will return soon and to purchase the KPass again.</p>
 <h2 id="a-student-wants-a-kpass-refund">A student wants a KPass refund</h2>
+<p>If a student wants a KPass refund unrelated to technical issues (e.g. duplicate payments) you will need to point them to Head of Licensed Trade to authorise.</p>
 <h2 id="a-student-accidentally-purchased-multiple-kpasses">A student accidentally purchased multiple KPasses</h2>
+<p>Multiple payments can be taken from student's bank accounts for many reasons such as refreshing the page during processing or errors with the card machine.</p>
+<p>If the KPasses were bought online:</p>
+<ol>
+<li>
+<p>If they were public purchases, you'll need to look through the transaction of the specific KPass</p>
+<p>If they were purchases made after the student had registered, you should be able to see them under their student profiles in the <strong>Active Subscriptions</strong> and <strong>Transactions</strong> sections.</p>
+</li>
+<li>
+<p>Pick one to refund and click <strong>View</strong></p>
+</li>
+<li>Check the box next to the KPass product under the <strong>Items</strong> list</li>
+<li>Click <strong>Refund</strong> and <strong>Online</strong></li>
+</ol>
+<p>The page should refresh with an alert box noting that a reversal of funds has been requested for that transaction. The team at Lincoln will process the refund through WorldPay.</p>
+<p>It's best to inform the student that a refund has been processed and that the money can take up to <strong>10 working days</strong> to reappear in their bank account. </p>
 <h2 id="a-student-cant-sign-in-to-purchase-a-kpass">A student can't sign in to purchase a KPass</h2>
+<p>The most common reason a student is unable to sign into the Kent Union website is because they didn't opt-in to become a member of Kent Union. Therefore they are not included in the data feed we receive from the university which allows them to sign in.</p>
+<p>In order to opt-in, they must contact the Central Student Administration Office at the university and explain they would like to be a member of Kent Union</p>
+<pre><code>Hello,
+
+Sorry to hear you are having problems accessing the Kent Union website. It looks as though we haven’t received data for you from the university and that’s what’s preventing you from logging in. This normally happens if you chose not to opt into being a member of Kent Union during registration.
+
+Please could you email the university’s Central Student Administration Office at csao@kent.ac.uk to see if this is the case - if it is they will be able to opt you in.
+
+Many thanks,
+</code></pre>
+
 <h2 id="a-student-is-unable-to-purchase-a-discounted-kpass">A student is unable to purchase a discounted KPass</h2>
-<h2 id="a-student-has-had-money-taken-but-no-confirmation-email">A student has had money taken but no confirmation email</h2>
+<p>If a student who should be able to purchased a discounted KPass is unable to, it's typically because they've now got a different student account.</p>
+<p>For example, the Gold Repurchasers KPass allows students who bought a KPass Gold the previous year to purchase a discounted KPass this year. However the student may have changed course or switched from an undergraduate to a postgraduate which means their current student account is not the one included in the product rule for the Gold Repurchasers KPass.</p>
+<p>If this is the case, you're able to temporarily reactivate their old student account so they can use it to purchase the discounted KPass and then transfer it to their new account.</p>
+<ol>
+<li>Go to <strong>Members</strong> &gt; <strong>Search Membership</strong> and find both the old and current student accounts</li>
+<li>The old student account should have an orange <strong>Opt In</strong> button featuring an arrow</li>
+<li>Click <strong>Action</strong> on the pop-up to reactivate the account for <strong>48 hours</strong></li>
+</ol>
+<blockquote>
+<p>If a student isn't able to login and purchase the discounted KPass in time, you are able to repeat this process.</p>
+</blockquote>
+<p>Contact the student and instruct them to sign into the Kent Union website with their previous login and purchase the discounted KPass with it. To transfer it to their new account:</p>
+<ol>
+<li>Find the KPass transaction on their old account and click <strong>View</strong></li>
+<li>Check the box next to the KPass product under the <strong>Items</strong> list</li>
+<li>Click <strong>Re-assign Selected Items</strong></li>
+<li>In the pop-up, enter the student ID of their <strong>new</strong> student account</li>
+</ol>
+<h2 id="a-students-payment-has-gone-through-twice">A student's payment has gone through twice</h2>
+<p>If a student has bought a KPass but the amount has been charged twice, firstly check their <strong>Member Profile</strong> to see if two seperate transactions appear under <strong>Transactions</strong>. If so, refund one of them.</p>
+<p>If only one appears, it can sometimes be the case that a duplicate transaction is not appearing on SUMS. Contact the team at Lincoln to explain the sitation alongwith any relative transaction IDs and student IDs. They will be able to check further and refund any extra transactions.</p>
                 
                   
                 
